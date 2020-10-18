@@ -1,0 +1,153 @@
+﻿@charset "utf-8";
+@import url('font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* CSS Document */
+
+body{font-family: 'Poppins', sans-serif;overflow-x:hidden;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+ul,li{list-style:none !important;margin:0;padding:0;}
+a{text-decoration:none !important;}
+p{margin:0;font-size:16px;font-weight:400;color:#676767;line-height:26px;}
+.padding_80{padding:80px 0;}
+.padding-right-reset{padding-right:0;}
+.padding-left-reset{padding-left:0;}
+
+/*Title*/
+h3{font-size:50px;font-weight:500;color:#001a53;text-transform:capitalize;margin-bottom:40px;}
+h3 span{font-size:22px;font-weight:600;text-transform:uppercase;color:#676767;}
+
+/*Button*/
+.btn-default{font-size:16px;color:#fff;font-weight:600;background-color:#ff841b;padding:12px 20px;border-radius:5px;transition:0.3s;}
+.btn-default:hover{background-color:#fff;color:#ff841b;transition:0.3s;}
+
+/*Navigation*/
+.navigation{position:absolute;top:0;width:100%;z-index:1;}
+.navigation .navbar-default{background-color:transparent;border-color:transparent;background-image: none;box-shadow: none;}
+.navigation .navbar-default .navbar-nav > li > a{font-size:14px;font-weight:500;color:#fff;text-transform:uppercase;}
+.navigation .navbar-right{margin-top: 16px;}
+
+/*Home Banner*/
+.banner1{background:url(../images/home-banner.jpg) top center no-repeat;height:820px;}
+.banner-caption{text-align:center;padding-top:250px;}
+.banner-caption h6{font-size:16px;font-weight:600;color:#ff841b;letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;}
+.banner-caption h2{font-size:60px;font-weight:600;color:#fff;line-height:90px;}
+.banner-caption p{color:#fff;margin-bottom:40px;}
+
+/*Services*/
+.services{background:url(../images/service-bg.jpg) top center no-repeat;height:752px;}
+.services .bg-grey{background-color:#f2f2f2;padding:30px;}
+.serv-content{margin-bottom:35px;}
+.serv-content h4{font-size:22px;font-weight:600;color:#001a53;margin-bottom:20px;}
+
+/*Footer*/
+.footer{background:url(../images/footer-bg.jpg) top center no-repeat;height:320px;text-align:center;}
+.footer li a{font-size:16px;font-weight:400;color:#fff;}
+.footer li{display:inline-block;padding: 30px 20px;}
+.footer p{color:#fff;}
+.footer p span{color:#ff841b;}
+
+/*Contact*/
+.contact{background-color:#fafafa;}
+.contact .form-control{border:1px solid #eaeaea; background-color:#fff; border-radius:5px; box-shadow:none; height:45px;margin-bottom:20px;}
+.contact .form-group{font-size:16px; font-weight:400;}
+.contact .form-control::placeholder{color:#c3c3c3;}
+.contact .form-group textarea{width: 100%;}
+.contact textarea.form-control{height:auto;}
+.contact h5{font-size:16px;font-weight:600;color:#001a53;margin-bottom:5px;}
+.contact p{margin-bottom:20px;}
+.contact p a{color:#676767;}
+.contact .social-icons a i{color:#ff841b;font-size:30px;margin-right:20px;}
+
+/*Counter*/
+.counter-bg{background:url(../images/counter-bg.png) top center no-repeat;height:347px;}
+.counter-bg .countericon { margin: 15px 0px 15px;}
+.counter-bg .countercol {font-size: 50px; color: #ff841b; text-align:center;font-weight:600;}
+.counter-bg .countercol span {font-size: 16px; display: block; font-weight: 400; color: #fff; margin: 12px 0; text-align:center;text-transform:capitalize;}
+.counter-bg .countercol strong{font-weight: 600;}
+
+/*Work*/
+.work .work-box{text-align:center;margin-top:30px;}
+.work .work-box h4{font-size:22px;font-weight:600;color:#001a53; margin-top:30px;}
+.work .work-box p.color-grey{color:#9b9b9b;margin-bottom:15px;}
+.owl-theme .owl-controls .owl-page span{background:#b2b2b2;padding:0px 15px;height:6px;margin-top:30px;}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{background:#ff841b;}
+
+/*Vision*/
+.vision{background:url(../images/vision-bg.jpg) top center no-repeat;height:537px;}
+.vision h3,.vision h3 span, .vision p{color:#fff;}
+
+/*Mission*/
+.mission{margin-top: -123px;}
+.mission .bg-white{background-color:#fbfbfb;-webkit-box-shadow: 1px 12px 9px 1px rgba(239,239,239,0.76);-moz-box-shadow: 1px 12px 9px 1px rgba(239,239,239,0.76);box-shadow: 1px 12px 9px 1px rgba(239,239,239,0.76);transition:0.3s;}
+.mission .bg-white h4{font-size:22px;font-weight:600;color:#001a53;margin-bottom:10px;margin-top:10px;}
+.mission .mission-text{text-align:center;padding:30px;}
+.mission .border-right{border-right:1px solid #e0e0e0;}
+.mission .mission-text:hover{background-image:url(../images/mission-hover.jpg);transition:0.3s;}
+
+/*Team*/
+.work .hovereffect {width:100%; height:100%; float:left; overflow:hidden; position:relative; text-align:center; margin-top:20px;margin-bottom:30px;}
+.work .hovereffect .overlay {width: 100%; height: 10%; position: absolute; overflow: hidden; bottom: 0; left: 0; opacity: 0; background-color: rgba(0, 26, 83, 0.7); -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;}
+.work .hovereffect img {display:block; position:relative; -webkit-transition:all .4s linear; transition:all .4s linear;}
+.work .hovereffect:hover .overlay {opacity:1;filter:alpha(opacity=100);}
+.work .icons-hover{text-align:center;padding-top:15px;}
+.work .icons-hover a i{color:#ff841b;margin-right:15px;font-size:20px;}
+
+/*Quote*/
+.quote{background:url(../images/quote-bg.jpg) top center no-repeat;height:267px;}
+.quote h6{font-size:50px;font-weight:500;color:#fff;margin-bottom:10px;}
+.quote p{color:#fff;}
+.quote .btn-css{margin-top:35px;text-align:right;}
+
+/*Testimonial*/
+.testimonial h5{font-size:16px;font-weight:400;color:#9b9b9b;margin-top:10px;}
+.testimonial h4{font-size:22px;font-weight:600;color:#001a53;margin-top:20px;}
+.testimonial .owl-theme .owl-controls{float:left;}
+
+
+
+/*Media Queries*/
+@media screen and (max-width: 400px) {
+}
+
+@media screen and (min-width: 401px) and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-toggle{margin-top:16px;}
+    .navbar-collapse{background-color:#000;}
+    .banner-caption h2{font-size: 30px;line-height: 60px;}
+    .services{background-image:none;height:auto;padding-bottom:0;}
+    .serv-content{text-align:center;}
+    .serv-content img{margin:10px auto;}
+    .mission .border-right{border-right:none;}
+    .padding-right-reset{padding-right:15px;}
+    .padding-left-reset{padding-left:15px;}
+    .mission , .contact h5{margin-top: 50px;}
+    .vision , .quote, .counter-bg, .footer{background-image:none;background-color:#001a53;height:auto;}
+    h3{font-size:40px;}
+    .quote .btn-css{text-align:center;}
+    .testi-content{margin-top:30px;}
+    .footer li{display:block;padding:6px 0;}
+    .footer ul{margin:20px 0;}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navigation .navbar-default .navbar-nav > li > a{font-size:12px;}
+    .navigation .nav > li > a{padding:10px 6px;}
+    .banner-caption h2, .quote h6{font-size:40px;}
+    .services{background-image:none;height:auto;padding-bottom:0;}
+    .mission {margin-top: -60px;}
+    .counter-bg .countercol span{font-size: 14px;}
+    .counter-bg .countercol{font-size: 35px;}
+    .footer li{padding:10px;}
+    .footer ul{margin:20px 0;}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .quote h6{font-size:46px;}
+    .footer li{padding: 30px 10px;}
+   
+}
+
